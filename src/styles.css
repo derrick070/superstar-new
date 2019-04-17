@@ -1,0 +1,76 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@import './assets/animate.css';ng2 npm install ng2-animate-on-scroll --save
+
+
+* {
+    font-family: 'Raleway', sans-serif;
+    
+  }
+
+  html,body{
+    height: 100%; 
+   
+  }
+
+body{
+    /* background-color: #e1f5fe; */
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+}
+
+.box{
+      
+    position: relative;
+    border: 7px solid black;
+    /* background-color: black; */
+    border-radius: 50px;
+    color: black;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+}
+.box:hover{
+    border: 7px solid black;
+    background-color: black;
+    color: white;
+    transition: ease;
+    
+}
+
+.box-container{
+    text-align: center;
+    /* border: 2px solid green; */
+    padding: 2%;
+}
+
+
+.animated-delay-1 {
+    animation-delay: 1s;
+    -webkit-animation-delay: 1s;
+    -moz-animation-delay: 1s;
+    -o-animation-delay: 1s;
+}
+
+.animated-delay-2 {
+    animation-delay: 2s;
+    -webkit-animation-delay: 2s;
+    -moz-animation-delay: 2s;
+    -o-animation-delay: 2s;
+}
+
+.animated {
+    visibility: visible !important;
+}
+.hide-on-init {
+    visibility: hidden;
+}
+
+@media (max-width: 640px){
+    .box{font-size: 24px;}
+}
+
+
+@media (max-width: 768px){
+    .box{font-size: 36px;}
+}

@@ -1,0 +1,64 @@
+html *{
+  font-family: Raleway;
+}
+.sidenav-container {
+  height: 100%;
+  background-color: rgb(233, 241, 243);
+}
+
+.sidenav {
+  width: 200px;
+}
+
+.sidenav .mat-toolbar {
+  background: inherit;
+}
+
+.mat-toolbar.mat-primary {
+  
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+
+.mat-toolbar button{
+  margin: 0 10px;
+  font-family: Raleway;
+}
+.hidden{
+  display: none;
+}
+
+.spacer{
+  flex: 1 1 auto;
+}
+
+
+.header{
+  z-index: 1;
+  position: fixed;
+  background-color: transparent;
+  font-family: Raleway;
+  font-weight: bold;
+  font-size: 32px;
+  color: rgb(15, 155, 236);
+  background-color: rgb(233, 241, 243);
+}
+
+.newHeader{
+  z-index: 1;
+  position: fixed;
+  background-color: rgb(188, 214, 223);
+  font-family: Raleway;
+
+ 
+  
+}
+
+
+
+/* @media (min-width: 768px){
+  .sidenav {
+   display: none;
+  }
+} */
