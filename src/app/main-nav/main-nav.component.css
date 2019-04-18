@@ -8,6 +8,7 @@ html *{
 
 .sidenav {
   width: 200px;
+  background-color: rgb(233, 241, 243);
 }
 
 .sidenav .mat-toolbar {
@@ -37,7 +38,7 @@ html *{
 .header{
   z-index: 1;
   position: fixed;
-  background-color: transparent;
+  /* background-color: transparent; */
   font-family: Raleway;
   font-weight: bold;
   font-size: 32px;
@@ -45,13 +46,25 @@ html *{
   background-color: rgb(233, 241, 243);
 }
 
+
 .newHeader{
   z-index: 1;
   position: fixed;
   background-color: rgb(188, 214, 223);
   font-family: Raleway;
 
- 
+}
+
+.list a:hover{
+  
+  background-color: rgb(15, 155, 236);
+  
+  
+}
+
+.list a:focus {
+  
+  background-color:  rgb(188, 214, 223);
   
 }
 

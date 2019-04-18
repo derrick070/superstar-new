@@ -39,6 +39,8 @@ export class FeaturedProductsComponent implements OnInit {
     });
   }
 
+  
+
   ngOnInit() {
   
   }

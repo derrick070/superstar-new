@@ -2,7 +2,7 @@
     margin: 2%;
     display: flex;
     position: relative;
-   border:2px solid black;
+   /* border:2px solid black; */
   height: 100%;
   }
  
@@ -27,13 +27,13 @@
     flex-basis: 100%;
     flex: 1;
     height: auto;
-    border:solid yellow 5px;
+    /* border:solid yellow 5px; */
     
     /* max-height: 100%; */
   }
   
   .blue-column {
-    border:solid blue 5px;
+    /* border:solid blue 5px; */
     height: auto;
     padding: 25% 5% 0% 2%;
     
@@ -42,7 +42,7 @@
   }
   
   .green-column {
-    border:solid green 5px;
+    /* border:solid green 5px; */
     height: auto;
    padding-top:2%;
     padding-left: 20%;
@@ -58,7 +58,8 @@
     height: 50%;
     background-attachment: fixed;
     text-align: center;
-
+    
+    opacity: 0.9;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
