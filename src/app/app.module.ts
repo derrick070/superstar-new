@@ -51,7 +51,6 @@ import { AnimateOnScrollModule } from 'ng2-animate-on-scroll';
     AnimateOnScrollModule.forRoot(),
     MatDialogModule    ,
     MatDividerModule
-
   ],
   providers: [],
   bootstrap: [AppComponent]

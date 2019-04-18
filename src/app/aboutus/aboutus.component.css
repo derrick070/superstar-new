@@ -16,15 +16,15 @@
 
   .transbox {
     /* margin: 0px 30px 30px 30px; */
-    background-color:#cccccc;
+    background-color:rgba(230,230,230,0.8);
    color: black;
-    opacity: 0.8;
+  
     min-height:500px;
     /* filter: alpha(opacity=60); For IE8 and earlier */
   }
   .content{
       padding:30px 30px 30px 30px;
-      font-size: 20px;
+      font-size:24px;
   }
 
 
@@ -60,8 +60,18 @@
   }
 
 .profile_back{
-  min-height:200px;
+  min-height:350px;
   margin: 5%;
   justify-content: center;
   background-color: white;
+}
+.cardList {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.cardListItem {
+  flex: 0 1 calc(33.3% - 32px);
 }
