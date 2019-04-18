@@ -42,6 +42,7 @@ import { AnimateOnScrollModule } from 'ng2-animate-on-scroll';
     AppRoutingModule,
     BrowserAnimationsModule,
     MatButtonModule, MatCheckboxModule,MatTabsModule,MatGridListModule,MatToolbarModule,
+    SlideshowModule,
     // ScrollToModule.forRoot(),
     MatCardModule,
     FlexLayoutModule,
