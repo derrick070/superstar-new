@@ -1,6 +1,7 @@
 import { Component, OnInit, Inject } from '@angular/core';
 import {MatDialog, MatDialogRef, MAT_DIALOG_DATA} from '@angular/material';
 import { Data } from 'src/assets/data';
+import { CssSelector } from '@angular/compiler';
 
 export interface DialogData {
   name: string;
@@ -22,7 +23,7 @@ export class FeaturedProductsComponent implements OnInit {
   featuredProductDescription:Map<String,Object>
 
   constructor(public dialog: MatDialog) {
-  
+     
     this.featuredProductProductName = new Data().getProductName();
     this.featuredProductShortDetails = new Data().getShortDetails();
     this.featuredProductDescription = new Data().getDescription();

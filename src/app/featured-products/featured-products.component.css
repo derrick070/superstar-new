@@ -6,102 +6,84 @@
 
 
 .matCard {
-    width: 270px;
-    height: 250px;
+  width: 270px;
+  height: 250px;
 }
-  
 
-  .flip-card {
-    margin-bottom: 20px;
-    background-color: transparent;
-    width: 305px;
-    height: 283.5px;
-    perspective: 1000px; /* Remove this if you don't want the 3D effect */
-  }
-  
-  /* This container is needed to position the front and back side */
-  .flip-card-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    transition: transform 0.8s;
-    transform-style: preserve-3d;
-  }
-  
-  /* Do an horizontal flip when you move the mouse over the flip box container */
-  .flip-card:hover .flip-card-inner {
-    transform: rotateY(180deg);
-  }
-  
-  /* Position the front and back side */
-  .flip-card-front, .flip-card-back {
-    position: absolute;
-    width: 305px;
-    height: 283.5px;
-    backface-visibility: hidden;
-  }
-  
-  /* Style the front side (fallback if image is missing) */
-  .flip-card-front {
-    background-color: transparent;
-    color: black;
-  }
-  
-  /* Style the back side */
-  .flip-card-back {
-    background-color: dodgerblue;
-    color: white;
-    border-radius: 1.7%;
-    transform: rotateY(180deg);
-  }
 
-  .mat-dialog-actions {
-      justify-content: flex-end;
-  }
-  
-  .parallax {
-    /* The image used */
-    background-image: url("http://onlineworldbd.com/resources/assets/images/category_images/1537688459.1536487636.household-appliances-hotspot-image.jpg");
-  
-    /* Set a specific height */
-    min-height: 500px; 
-  
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
+.flip-card {
+  margin-bottom: 20px;
+  background-color: transparent;
+  width: 305px;
+  height: 283.5px;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
 
-  
-  /* @media only screen and (max-device-width: 1366px) {
-    .parallax {
-      background-attachment: scroll;
-    }
-  } */
-  .fpdiv{
-    background-color: lightblue;
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
 
-  }
-  
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 305px;
+  height: 283.5px;
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: transparent;
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: dodgerblue;
+  color: white;
+  border-radius: 1.7%;
+  transform: rotateY(180deg);
+}
+
+.mat-dialog-actions {
+    justify-content: flex-end;
+}
+
+.fpdiv{
+  background-color: lightblue;
+
+}
+
 
 .inner{
-  display: inline-block;
+display: inline-block;
 }
 
+.bottom-right {
+  color: black;
+  position: absolute;
+  bottom: 52px;
+  right: 5px;
+  display: none;
+}
+@media(max-width:961px){
+  .screen-padding{
+  /* display: flex; */
+   
+  }
   .bottom-right {
-    color: black;
-    position: absolute;
-    bottom: 52px;
-    right: 5px;
+  
+    display: inline;
   }
-  @media(max-width:961px){
-    .screen-padding{
-     
-      align-items: center;
-      text-align: center;
-    display: flex;
-     
-    }
-  }
+}

@@ -14,9 +14,15 @@ export class HomeComponent  {
 
   state = 'hide'
 
+  imagesUrl:String[]
+
   constructor(public el: ElementRef) { }
 
-  @HostListener('window:scroll', ['$event'])
+  ngOnInit(){
+    this.imagesUrl=["http://www.pngmart.com/files/7/Refrigerator-PNG-File.png","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRKHueRmiH4LlewXDlj9PFkRrtpL_DPJNtfWq7n1HnYUC4xPMh","http://www.pngmart.com/files/7/Refrigerator-PNG-File.png"];
+  }
+
+  @HostListener('window:scroll', [])
     checkScroll() {
       const componentPosition = this.el.nativeElement.offsetTop
       const scrollPosition = window.pageYOffset
