@@ -10,6 +10,8 @@ import {Router} from '@angular/router';
 })
 export class MainNavComponent {
   header:boolean;
+  hdr: String = "header";
+
   isHandset$: Observable<boolean> = this.breakpointObserver.observe(Breakpoints.Handset)
     .pipe(
       map(result => result.matches)
@@ -22,10 +24,12 @@ export class MainNavComponent {
 
     const number = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
     if (number < 100) {
-      this.header=false;
+      // this.header=false;
+      this.hdr="header";
       console.log('You are < 10px from the top to bottom');
     } else {
-      this.header=true;
+      this.hdr="headerDark";
+      // this.header=true;
       console.log('You are >10 from the top to bottom');
     
     }

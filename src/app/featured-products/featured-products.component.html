@@ -6,7 +6,7 @@
 
 <tr fxLayout="row" fxLayout.sm="column" fxLayout.xs="column" fxLayoutWrap fxLayoutAlign="center" fxLayoutGap="3%"
   *ngFor="let name of featuredProductProductName;let i=index">
-  <ng-container *ngIf="i%3==0">
+  <ng-container class="screen-padding" *ngIf="i%3==0">
     <td *ngFor="let j of [i,i+1,i+2]" class="flip-card">
       <div class="flip-card-inner">
         <div class="flip-card-front">
@@ -14,7 +14,7 @@
             <img mat-card-image
               src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRKHueRmiH4LlewXDlj9PFkRrtpL_DPJNtfWq7n1HnYUC4xPMh"
               alt="Photo of a {{featuredProductProductName[j]}}">
-            <div *ngIf="!(isHandset$ | async)" class="bottom-right"><b>Click to Flip</b></div>
+            <div class="bottom-right"><b>Click to Flip</b></div>
 
             <mat-card-content>
               <p>{{featuredProductProductName[j]}}</p>
@@ -40,8 +40,11 @@
     </td>
   </ng-container>
 </tr>
+<!-- <ng-template [ngIf]="{{toggle}}">
 
-<div fxLayoutAlign="center"#destination>
+      hello  
+</ng-template> -->
+<div fxLayoutAlign="center">
   <button class="button-text" mat-button color="primary" style="font-size: 18px"><a [routerLink]="['allproducts']">Show
       All Products -></a></button>
 </div>

@@ -47,6 +47,17 @@ html *{
 }
 
 
+.headerDark{
+  z-index: 1;
+  position: fixed;
+  /* background-color: transparent; */
+  font-family: Raleway;
+  font-weight: bold;
+  font-size: 32px;
+  color: white;
+  background-color: blue;
+}
+/* 
 .newHeader{
   z-index: 1;
   position: fixed;
@@ -66,7 +77,7 @@ html *{
   
   background-color:  rgb(188, 214, 223);
   
-}
+} */
 
 
 

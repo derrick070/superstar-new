@@ -1,31 +1,38 @@
-<div fxLayout="row"  fxLayout.xs="column" fxLayoutGap="10px" >
-<div class='some-page-wrapper'>
-  <div class='row'>
-    <div fxFlex.gt-sm="50" fxFlex="100">
-    <div class='column'>
-      <div class='blue-column' >
-        <span class="title1 hide-on-init" animateOnScroll animationName="animated fadeIn">This is a heading or title.</span>
-        <br>
-        <span class="subhead hide-on-init animated-delay-1 " animateOnScroll animationName="animated fadeInDown" > Sumary of product giving brief about the product and company. 
-          This can continue from bla to bla and ba from na Sumary of product giving brief about the product and company. 
-          This can continue from bla to bla and ba from na.
-          Sumary of product giving brief about the product and company. 
-          This can continue from bla to bla and ba from na Sumary of product giving brief about the product and company. 
-          This can continue from bla to bla and ba from na.</span>
+<div fxLayout="row" fxLayout.xs="column" fxLayoutGap="10px">
+  <div class='some-page-wrapper'>
+    <div class='row'>
+      <div fxFlex.gt-sm="50" fxFlex="100">
+        <div class='column'>
+          <div class='blue-column'>
+            <span class="title1 hide-on-init" animateOnScroll animationName="animated fadeIn">This is a heading or
+              title.</span>
+            <br>
+            <span class="subhead hide-on-init animated-delay-1 " animateOnScroll animationName="animated fadeInDown">
+              Sumary of product giving brief about the product and company.
+              This can continue from bla to bla and ba from na Sumary of product giving brief about the product and
+              company.
+              This can continue from bla to bla and ba from na.
+              Sumary of product giving brief about the product and company.
+              This can continue from bla to bla and ba from na Sumary of product giving brief about the product and
+              company.
+              This can continue from bla to bla and ba from na.</span>
+          </div>
+        </div>
+      </div>
+      <div fxFlex.gt-sm="50" fxFlex="100">
+        <div class='column'>
+          <div class='green-column'>
+            <!-- <span class="parallax"></span> -->
+            <!-- <img class="hide-on-init animated-delay-2" animateOnScroll animationName="animated fadeIn " src="http://www.pngmart.com/files/7/Refrigerator-PNG-File.png"> -->
+            <slideshow height="500px" width="250px" [autoPlay]="true" [showArrows]="true" [imageUrls]="imagesUrl"
+              [lazyLoad]="imagesUrl?.length > 1" [autoPlayWaitForLazyLoad]="true">
+            </slideshow>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-  <div fxFlex.gt-sm="50" fxFlex="100">
-    <div class='column'>
-      <div class='green-column'>
-        <!-- <span class="parallax"></span> -->
-        <img class="hide-on-init animated-delay-2" animateOnScroll animationName="animated fadeIn " src="http://www.pngmart.com/files/7/Refrigerator-PNG-File.png">
-      </div>
-    </div>
-  </div>
-  </div>
 
-</div>
+  </div>
 </div>
 
 
@@ -37,7 +44,7 @@
 
 <div class="parallax  ">
 
-    <span class="innovate" >&nbsp;One Vision. Innovate.&nbsp;</span>
+  <span class="innovate">&nbsp;One Vision. Innovate.&nbsp;</span>
 
 </div>
 <!-- comment -->

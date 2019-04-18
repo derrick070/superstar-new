@@ -7,7 +7,7 @@ import { AppComponent } from './app.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MatButtonModule, MatCheckboxModule,MatTabsModule,MatGridListModule,MatToolbarModule,
    MatSidenavModule, MatIconModule, MatListModule,MatDividerModule} from '@angular/material';
-// import {SlideshowModule} from 'ng-simple-slideshow';
+import {SlideshowModule} from 'ng-simple-slideshow';
 import { HomeComponent } from './home/home.component';
 import { FeaturedProductsComponent, Dialog } from './featured-products/featured-products.component';
 import { AboutusComponent } from './aboutus/aboutus.component';
