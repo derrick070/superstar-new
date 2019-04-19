@@ -22,11 +22,11 @@ body{
 .box{
       
     position: relative;
-    border: 7px solid rgb(6, 6, 49);
+    border: 5px solid rgb(6, 6, 49);
     /* background-color: black; */
     border-radius: 50px;
     color: rgb(6, 6, 49);
-    font-size: 50px;
+    font-size: 36px;
     font-weight: bold;
     text-align: center;
 }
