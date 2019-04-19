@@ -23,10 +23,19 @@
         <div class='column'>
           <div class='green-column'>
             <!-- <span class="parallax"></span> -->
-            <img class="hide-on-init animated-delay-2" animateOnScroll animationName="animated fadeIn " src="http://www.pngmart.com/files/7/Refrigerator-PNG-File.png">
-            <!-- <slideshow height="50%" width="50%" [autoPlay]="true" [showArrows]="true" [imageUrls]="imagesUrl"
-              [lazyLoad]="imagesUrl?.length > 1" [autoPlayWaitForLazyLoad]="true">
-            </slideshow> -->
+            <!-- <img class="hide-on-init animated-delay-2" animateOnScroll animationName="animated fadeIn " src="http://www.pngmart.com/files/7/Refrigerator-PNG-File.png"> -->
+            <br><br><br><slideshow 
+                    [minHeight]="'500px'" 
+                    [autoPlay]=true 
+                    [showArrows]=false 
+                    [imageUrls]="imageUrls"
+                    [lazyLoad]="imageUrls?.length > 1" 
+                    [autoPlayWaitForLazyLoad]="true"
+                    [autoPlayInterval]=4000
+                    [backgroundSize]="'50%'"
+                    [showDots]=true
+                    >
+            </slideshow>
           </div>
         </div>
       </div>

@@ -4,48 +4,50 @@
 
 <div class="box-container"><span class="box">&nbsp; Products &nbsp;</span></div>
 
-<tr fxLayout="row" fxLayout.sm="column" fxLayout.xs="column" fxLayoutWrap fxLayoutAlign="center" fxLayoutGap="3%"
-  *ngFor="let name of featuredProductProductName;let i=index">
-  <ng-container class="screen-padding" *ngIf="i%3==0">
-    <td *ngFor="let j of [i,i+1,i+2]" class="flip-card">
-      <div class="flip-card-inner">
-        <div class="flip-card-front">
-          <mat-card class="matCard">
-            <img mat-card-image
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRKHueRmiH4LlewXDlj9PFkRrtpL_DPJNtfWq7n1HnYUC4xPMh"
-              alt="Photo of a {{featuredProductProductName[j]}}">
-            <div class="bottom-right"><b>Click to Flip</b></div>
+<table fxLayoutAlign="center">
+  <tr class="gap" fxLayout="row" fxLayout.sm="column" fxLayout.xs="column" *ngFor="let name of featuredProductProductName;let i=index">
+    <ng-container *ngIf="i%3==0">
+      <td *ngFor="let j of [i,i+1,i+2]" class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <mat-card class="matCard">
+              <img mat-card-image
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRKHueRmiH4LlewXDlj9PFkRrtpL_DPJNtfWq7n1HnYUC4xPMh"
+                alt="Photo of a {{featuredProductProductName[j]}}">
+              <div class="bottom-right"><b>Click to Flip</b></div>
 
-            <mat-card-content>
-              <p>{{featuredProductProductName[j]}}</p>
-            </mat-card-content>
-          </mat-card>
-        </div>
-        <div class="flip-card-back">
-          <h1>{{featuredProductProductName[j]}}</h1>
-          <p>
-            {{featuredProductShortDetails.get(featuredProductProductName[j])}}
-          </p>
-          <p>
-            {{featuredProductDescription.get(featuredProductProductName[j]).get("size")}}
-            {{featuredProductDescription.get(featuredProductProductName[j]).get("weight")}}
-            {{featuredProductDescription.get(featuredProductProductName[j]).get("colour")}}
-          </p>
-          <div style=" padding-top: 90px;">
-            <button class="button-text" (click)="openDialog()" mat-button style="font-size: 18px; float: right;">Show
-              More</button>
+              <mat-card-content>
+                <p>{{featuredProductProductName[j]}}</p>
+              </mat-card-content>
+            </mat-card>
+          </div>
+          <div class="flip-card-back">
+            <h1>{{featuredProductProductName[j]}}</h1>
+            <p>
+              {{featuredProductShortDetails.get(featuredProductProductName[j])}}
+            </p>
+            <p>
+              {{featuredProductDescription.get(featuredProductProductName[j]).get("size")}}
+              {{featuredProductDescription.get(featuredProductProductName[j]).get("weight")}}
+              {{featuredProductDescription.get(featuredProductProductName[j]).get("colour")}}
+            </p>
+            <div style=" padding-top: 90px;">
+              <button class="button-text" (click)="openDialog()" mat-button style="font-size: 18px; float: right;">Show
+                More</button>
+            </div>
           </div>
         </div>
-      </div>
-    </td>
-  </ng-container>
-</tr>
+      </td>
+    </ng-container>
+  </tr>
+</table>
+
 <!-- <ng-template [ngIf]="{{toggle}}">
 
       hello  
 </ng-template> -->
 <div fxLayoutAlign="center" style="padding-bottom: 2%;">
   <button class="button-text" mat-button  style="font-size: 20px;color:rgb(6, 6, 49);" [routerLink]="['allproducts']">Show
-      All Products</button>
+      All Products -></button>
 </div>
 
