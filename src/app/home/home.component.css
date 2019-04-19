@@ -35,7 +35,7 @@
   .blue-column {
     /* border:solid blue 5px; */
     height: auto;
-    padding: 25% 5% 0% 2%;
+    padding: 15% 5% 0% 2%;
     
     text-align: justify;
     
@@ -195,3 +195,4 @@ font-weight: bold;
       font-size: 18px;
   }
   }
+  
