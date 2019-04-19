@@ -1,34 +1,46 @@
-
 <br><br><br><br>
-<div class="box-container"><span class="box">&nbsp; Products &nbsp;</span></div>  
-<tr fxLayout="row" fxLayout.xs="column" fxLayoutWrap fxLayoutAlign="center" fxLayoutGap="1.5%"
-  *ngFor="let name of featuredProductProductName;let i=index">
-  <ng-container *ngIf="i%4==0">
-    <td *ngFor="let j of [i,i+1,i+2,i+3]" class="flip-card">
-      <ng-container *ngIf="j<featuredProductProductName?.length">
-        <div class="flip-card-inner">
-          <div class="flip-card-front">
-            <mat-card class="matCard">
-              <img mat-card-image
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRKHueRmiH4LlewXDlj9PFkRrtpL_DPJNtfWq7n1HnYUC4xPMh"
-                alt="Photo of a {{featuredProductProductName[j]}}">
-              <mat-card-content>
-                <p>{{featuredProductProductName[j]}}</p>
-              </mat-card-content>
-            </mat-card>
-          </div>
-          <div class="flip-card-back">
-            <h1>{{featuredProductProductName[j]}}</h1>
-            <p>
-              {{featuredProductShortDetails.get(featuredProductProductName[j])}}
-            </p>
-            <div style=" padding-top: 80px;">
-              <button class="button-text" (click)="openDialog()" mat-button style="font-size: 18px; float: right;">Show
-                More</button>
+<div class="parallax"></div>
+
+<div class="box-container"><span class="box">&nbsp; Products &nbsp;</span></div>
+
+<table fxLayoutAlign="center">
+  <tr class="gap" fxLayout="row" fxLayout.sm="column" fxLayout.xs="column"
+    *ngFor="let name of detailedProductProductName;let i=index">
+    <ng-container *ngIf="i%3==0">
+      <td *ngFor="let j of [i,i+1,i+2]" class="flip-card">
+        <span *ngIf="j<detailedProductProductName?.length">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <mat-card class="matCard">
+                <img mat-card-image
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRKHueRmiH4LlewXDlj9PFkRrtpL_DPJNtfWq7n1HnYUC4xPMh"
+                  alt="Photo of a {{detailedProductProductName[j]}}">
+                <div class="bottom-right"><b>Click to Flip</b></div>
+
+                <mat-card-content>
+                  <p>{{detailedProductProductName[j]}}</p>
+                </mat-card-content>
+              </mat-card>
+            </div>
+            <div class="flip-card-back">
+              <h1>{{detailedProductProductName[j]}}</h1>
+              <p>
+                {{detailedProductShortDetails.get(detailedProductProductName[j])}}
+              </p>
+              <p>
+                {{detailedProductDescription.get(detailedProductProductName[j]).get("size")}}
+                {{detailedProductDescription.get(detailedProductProductName[j]).get("weight")}}
+                {{detailedProductDescription.get(detailedProductProductName[j]).get("colour")}}
+              </p>
+              <div style=" padding-top: 90px;">
+                <button class="button-text" (click)="openDialog()" mat-button
+                  style="font-size: 18px; float: right;">Show
+                  More</button>
+              </div>
             </div>
           </div>
-        </div>
-      </ng-container>
-    </td>
-  </ng-container>
-</tr>
+        </span>
+      </td>
+    </ng-container>
+  </tr>
+</table>
