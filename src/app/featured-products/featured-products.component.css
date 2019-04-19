@@ -11,6 +11,25 @@
 }
 
 
+  .mat-dialog-actions {
+      justify-content: flex-end;
+  }
+  
+  .parallax1 {
+    /* The image used */
+    background-image: url("http://onlineworldbd.com/resources/assets/images/category_images/1537688459.1536487636.household-appliances-hotspot-image.jpg");
+  
+    /* Set a specific height */
+    height: 300px;; 
+    margin: 2%;
+    border-radius: 5px;
+    opacity: 0.8;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 .flip-card {
   margin-bottom: 20px;
   background-color: transparent;

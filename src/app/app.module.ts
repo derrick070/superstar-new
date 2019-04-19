@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+// import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
+// import { ScrollToModule } from 'ng2-scroll-to-el';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
@@ -42,6 +43,7 @@ import { AnimateOnScrollModule } from 'ng2-animate-on-scroll';
     BrowserAnimationsModule,
     MatButtonModule, MatCheckboxModule,MatTabsModule,MatGridListModule,MatToolbarModule,
     SlideshowModule,
+    // ScrollToModule.forRoot(),
     MatCardModule,
     FlexLayoutModule,
     LayoutModule,
