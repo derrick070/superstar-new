@@ -13,14 +13,17 @@ export interface DialogData {
 export class DetailedProductsComponent implements OnInit {
 
   name: string ="ABC";
-  // featuredProductDescription:Map<String,String> = new Data().;
-  featuredProductShortDetails:Map<String,String>
-  featuredProductProductName:String[];
+  // detailedProductDescription:Map<String,String> = new Data().;
+  detailedProductShortDetails:Map<String,String>
+  detailedProductProductName:String[];
+  detailedProductDescription:Map<String,Object>
 
   constructor(public dialog: MatDialog) {
   
-    this.featuredProductProductName = new Data().getProductName();
-    this.featuredProductShortDetails = new Data().getShortDetails();
+    this.detailedProductProductName = new Data().getProductName();
+    this.detailedProductShortDetails = new Data().getShortDetails();
+    this.detailedProductDescription = new Data().getDescription();
+
   }
 
   openDialog(): void {
