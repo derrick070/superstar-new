@@ -11,7 +11,7 @@
       <a mat-list-item href="#">Contact Us</a>
     </mat-nav-list>
   </mat-sidenav>
-  <mat-sidenav-content class="content">
+  <mat-sidenav-content class="content homeTop">
     <mat-toolbar class="{{hdr}}" [ngClass]="header">
       <button
         type="button"
@@ -25,14 +25,14 @@
       <span>Super Star</span>
       <span class="spacer"></span>
       <div [ngClass]="{hidden: (isHandset$ | async)}">
-      <button  mat-button   >Home</button>
-      <button mat-button >Products</button>
-      <button mat-button >About us</button>
-      <button mat-button >Contact Us</button>
+      <button  mat-button  (click)="scrollTo('homeTop')">Home</button>
+      <button mat-button (click)="scrollTo('productScroll')">Products</button>
+      <button mat-button (click)="scrollTo('aboutUsScroll')" >About us</button>
+      <button mat-button (click)="scrollTo('contactUsScroll')">Contact Us</button>
     </div>
     </mat-toolbar>
     <!-- Add Content Here -->
-    <ng-content ></ng-content>
+    <ng-content  ></ng-content>
   </mat-sidenav-content>
 </mat-sidenav-container>
 
