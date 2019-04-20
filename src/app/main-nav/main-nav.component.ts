@@ -28,7 +28,7 @@ export class MainNavComponent {
       this.hdr="header";
       console.log('You are < 10px from the top to bottom');
     } else {
-      this.hdr="headerDark";
+      this.hdr="headerDark mat-elevation-z8";
       // this.header=true;
       console.log('You are >10 from the top to bottom');
     
@@ -39,7 +39,7 @@ export class MainNavComponent {
 scrollTo(className: string):void {
   const elementList = document.querySelectorAll('.' + className);
   const element = elementList[0] as HTMLElement;
-  element.scrollIntoView({ behavior: 'smooth' });
+  element.scrollIntoView({ behavior: 'smooth',inline:'start', block:'start'});
 }
 
 }

@@ -1,6 +1,6 @@
 
 .backimage {
-    background-image: url("https://www.chatelaine.com/wp-content/uploads/2018/03/KitchenIdeas_WendyWordDesign-660x495.jpg");
+    background-image: url("https://images.unsplash.com/photo-1496247749665-49cf5b1022e9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80");
     min-height: 500px; 
   
     /* Create the parallax scrolling effect */
@@ -8,24 +8,32 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    text-align: center;
+    color:white;
+    opacity: 0.9;
+    
   }
   
 .round-image{
-  border-radius: 50%;
+  border-radius: 2%;
 }
 
-  .transbox {
+  .transBlack {
     /* margin: 0px 30px 30px 30px; */
-    background-color:rgba(230,230,230,0.8);
-   color: black;
-  
-    min-height:500px;
+    
+    background: rgba(0, 0, 0, 0.6);
     /* filter: alpha(opacity=60); For IE8 and earlier */
   }
   .content{
+    margin:2%;
       padding:30px 30px 30px 30px;
       font-size:24px;
+      /* text-align: center; */
+      text-align: justify;
+      
+      
   }
+
 
 
    
@@ -63,7 +71,7 @@
   min-height:350px;
   margin: 5%;
   justify-content: center;
-  background-color: white;
+  /* background-color: white; */
 }
 .cardList {
   display: flex;
@@ -71,7 +79,16 @@
   flex-wrap: wrap;
   justify-content: center;
 }
+.heading{
+  font-size: 24px;
+  color: white;
 
-.cardListItem {
-  flex: 0 1 calc(33.3% - 32px);
 }
+.subheading{
+  font-size: 12px;
+  color: white;
+}
+/*
+ .cardListItem {
+  flex: 0 1 calc(33.3% - 32px);
+} */
