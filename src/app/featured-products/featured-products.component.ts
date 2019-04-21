@@ -18,15 +18,15 @@ export class FeaturedProductsComponent implements OnInit {
 
   name: string ="ABC";
   // featuredProductDescription:Map<String,String> = new Data().;
-  featuredProductShortDetails:Map<String,String>
-  featuredProductProductName:String[];
-  featuredProductDescription:Map<String,Object>
+  // featuredProductShortDetails:Map<String,String>
+  featuredProductProductName:String[]=[];
+  featuredProductSpecification:Map<String,Object>
 
   constructor(public dialog: MatDialog) {
      
     this.featuredProductProductName = new Data().getProductName();
-    this.featuredProductShortDetails = new Data().getShortDetails();
-    this.featuredProductDescription = new Data().getDescription();
+    // this.featuredProductShortDetails = new Data().getShortDetails();
+    this.featuredProductSpecification = new Data().getSpecification();
   }
 
   openDialog(): void {

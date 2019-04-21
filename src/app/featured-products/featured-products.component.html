@@ -1,4 +1,4 @@
-<div class="parallax1"></div>
+
 
 <mat-divider></mat-divider>
 
@@ -10,7 +10,7 @@
 
 <table fxLayoutAlign="center">
   <tr class="gap" fxLayout="row" fxLayout.sm="column" fxLayout.xs="column" *ngFor="let name of featuredProductProductName;let i=index">
-    <ng-container *ngIf="i%3==0">
+    <ng-container *ngIf="i%3==0 && i<6">
       <td *ngFor="let j of [i,i+1,i+2]" class="flip-card">
         <div class="flip-card-inner">
           <div class="flip-card-front">
@@ -27,15 +27,15 @@
           </div>
           <div class="flip-card-back">
             <h1>{{featuredProductProductName[j]}}</h1>
-            <p>
+            <!-- <p>
               {{featuredProductShortDetails.get(featuredProductProductName[j])}}
-            </p>
+            </p> -->
             <p>
-              {{featuredProductDescription.get(featuredProductProductName[j]).get("size")}}
-              {{featuredProductDescription.get(featuredProductProductName[j]).get("weight")}}
-              {{featuredProductDescription.get(featuredProductProductName[j]).get("colour")}}
+                Type:&nbsp; {{featuredProductSpecification.get(featuredProductProductName[j]).get("Type")}}
+               <br> Dimensions:&nbsp; {{featuredProductSpecification.get(featuredProductProductName[j]).get("Dimensions")}}
+               <br> Capacity:&nbsp;{{featuredProductSpecification.get(featuredProductProductName[j]).get("Capacity")}}
             </p>
-            <div style=" padding-top: 90px;">
+            <div style=" position: absolute;right: 0;bottom: 0;">
               <button class="button-text" (click)="openDialog()" mat-button style="font-size: 18px; float: right;">Show
                 More</button>
             </div>
@@ -56,4 +56,6 @@
 </div>
 
 
+<mat-divider></mat-divider>
+<div class="parallax1"></div>
 <mat-divider></mat-divider>

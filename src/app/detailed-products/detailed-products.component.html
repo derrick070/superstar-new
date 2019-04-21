@@ -24,15 +24,15 @@
             </div>
             <div class="flip-card-back">
               <h1>{{detailedProductProductName[j]}}</h1>
-              <p>
+              <!-- <p>
                 {{detailedProductShortDetails.get(detailedProductProductName[j])}}
-              </p>
+              </p> -->
               <p>
-                {{detailedProductDescription.get(detailedProductProductName[j]).get("size")}}
-                {{detailedProductDescription.get(detailedProductProductName[j]).get("weight")}}
-                {{detailedProductDescription.get(detailedProductProductName[j]).get("colour")}}
+                  Type:&nbsp;{{detailedProductSpecification.get(detailedProductProductName[j]).get("Type")}}
+                 <br> Dimensions:&nbsp;{{detailedProductSpecification.get(detailedProductProductName[j]).get("Dimensions")}}
+                 <br> Capacity:&nbsp;{{detailedProductSpecification.get(detailedProductProductName[j]).get("Capacity")}}
               </p>
-              <div style=" padding-top: 90px;">
+              <div style=" position: absolute;right: 0;bottom: 0">
                 <button class="button-text" (click)="openDialog()" mat-button
                   style="font-size: 18px; float: right;">Show
                   More</button>

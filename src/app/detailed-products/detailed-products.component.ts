@@ -14,15 +14,15 @@ export class DetailedProductsComponent implements OnInit {
 
   name: string ="ABC";
   // detailedProductDescription:Map<String,String> = new Data().;
-  detailedProductShortDetails:Map<String,String>
+  // detailedProductShortDetails:Map<String,String>
   detailedProductProductName:String[];
-  detailedProductDescription:Map<String,Object>
+  detailedProductSpecification:Map<String,Object>
 
   constructor(public dialog: MatDialog) {
   
     this.detailedProductProductName = new Data().getProductName();
-    this.detailedProductShortDetails = new Data().getShortDetails();
-    this.detailedProductDescription = new Data().getDescription();
+    // this.detailedProductShortDetails = new Data().getShortDetails();
+    this.detailedProductSpecification = new Data().getSpecification();
 
   }
 
