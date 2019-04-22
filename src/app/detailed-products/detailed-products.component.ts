@@ -67,7 +67,7 @@ export class DetailedProductsComponent implements OnInit {
 
 @Component({
   selector: 'dialog-box',
-  templateUrl: 'dialog-box.html',
+    templateUrl: 'dialog-box.html',
 })
 export class ProductDialog {
 
