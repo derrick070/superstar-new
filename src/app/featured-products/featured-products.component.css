@@ -108,5 +108,7 @@ tr.gap>td{
   .bottom-right {
   
     display: inline;
+    color: rgb(6, 6, 49);
+    font-weight: 500;
   }
 }

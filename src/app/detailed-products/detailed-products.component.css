@@ -91,3 +91,16 @@ tr.gap>td{
     display: inline;
   }
 }
+
+.movingButton 
+{
+  position: fixed;
+  bottom: 50px;
+  right: 40px;
+  height: 60px;
+  background-color: #E9F1f3;
+  background-image: url("/assets/top.png");
+  background-repeat: no-repeat; 
+  /* background-size: auto;  */
+  background-position: center; 
+}

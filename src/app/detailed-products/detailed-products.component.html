@@ -1,7 +1,8 @@
 <br><br><br><br>
 <div class="parallax"></div>
 
-<div class="box-container"><span class="box"> Products </span></div>
+<div id="title" class="box-container"><span class="box"> Products </span></div>
+
 
 <table fxLayoutAlign="center">
   <tr class="gap" fxLayout="row" fxLayout.sm="column" fxLayout.xs="column"
@@ -18,7 +19,7 @@
                 <div class="bottom-right"><b>Click to Flip</b></div>
 
                 <mat-card-content>
-                  <p>{{detailedProductProductName[j]}}</p>
+                  <p><b>{{detailedProductProductName[j]}}</b></p>
                 </mat-card-content>
               </mat-card>
             </div>
@@ -28,9 +29,10 @@
                 {{detailedProductShortDetails.get(detailedProductProductName[j])}}
               </p> -->
               <p>
-                  Type:&nbsp;{{detailedProductSpecification.get(detailedProductProductName[j]).get("Type")}}
-                 <br> Dimensions:&nbsp;{{detailedProductSpecification.get(detailedProductProductName[j]).get("Dimensions")}}
-                 <br> Capacity:&nbsp;{{detailedProductSpecification.get(detailedProductProductName[j]).get("Capacity")}}
+                Type:&nbsp;{{detailedProductSpecification.get(detailedProductProductName[j]).get("Type")}}
+                <br>
+                Dimensions:&nbsp;{{detailedProductSpecification.get(detailedProductProductName[j]).get("Dimensions")}}
+                <br> Capacity:&nbsp;{{detailedProductSpecification.get(detailedProductProductName[j]).get("Capacity")}}
               </p>
               <div style=" position: absolute;right: 0;bottom: 0">
                 <button class="button-text" (click)="openDialog()" mat-button
@@ -44,3 +46,5 @@
     </ng-container>
   </tr>
 </table>
+
+<button mat-button class="movingButton" (click)="scrollToUp('title')" *ngIf="showArrow"></button>
