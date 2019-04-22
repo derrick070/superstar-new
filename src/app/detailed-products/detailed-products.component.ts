@@ -54,7 +54,7 @@ export class DetailedProductsComponent implements OnInit {
   }
 
   ngOnInit() {
-
+    window.scrollTo(0, 0)
   }
 
   scrollToUp(className: string): void {

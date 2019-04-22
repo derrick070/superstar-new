@@ -103,6 +103,12 @@ tr.gap>td{
   padding :0 0.75em 0.45em 0.75em;
 }
 
+.showAll{
+  color:rgb(6, 6, 49); 
+  font-weight: bold;
+  font-size: 4vh;
+}
+
 @media(max-width:960px){
 
   .bottom-right {
