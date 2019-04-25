@@ -3,7 +3,9 @@
     background-image: url('https://thumbs.dreamstime.com/z/banner-best-word-best-colored-letters-comic-style-high-detail-vector-mock-up-typical-book-page-speech-bubble-59131177.jpg');
     background-size: cover;
 } */
-
+.mat-card-content{
+  font-family: 'Raleway', sans-serif; 
+}
 button{
   font-family: 'Raleway', sans-serif; 
 }

@@ -33,7 +33,7 @@
   }
   
   .blue-column {
-    border:solid blue 5px;
+    /* border:solid blue 5px; */
     height: auto;
     padding: 15% 5% 0% 2%;
     
@@ -42,9 +42,9 @@
   }
   
   .green-column {
-    border:solid green 5px;
+    /* border:solid green 5px; */
     /* height: auto; */
-   padding-top:2%;
+   /* padding-top:2%; */
     /* padding-left: 20%; */
   max-height: 100%;
     
