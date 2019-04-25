@@ -24,3 +24,40 @@
     font-family: 'Times New Roman', Times, serif;
        /* text-align: center; */
  }
+
+.paddingForFooter 
+{
+    padding-bottom:5%;
+}
+
+.paddingForLeft{
+
+    padding-left: 10%;
+}
+
+@media(max-width:960px){
+
+    .paddingForLeft{
+
+        padding-left: 0%;
+
+    } 
+    .paddingForFooter 
+    {
+        padding-bottom:10%;
+    }
+    .allCenter{
+       align-self: center;
+    }
+  }
+  
+  @media(max-width:400px){
+  
+    .paddingForFooter 
+    {
+        padding-bottom:20%;
+    }
+    .allCenter{
+        align-self: center;
+     }
+  }
