@@ -111,6 +111,9 @@ tr.gap>td{
 
 @media(max-width:960px){
 
+  .parallax1{
+    display:none;
+  }
   .bottom-right {
   
     display: inline;

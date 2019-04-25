@@ -9,6 +9,7 @@ html *{
 .sidenav {
   width: 200px;
   background-color: rgb(233, 241, 243);
+  position: fixed;
 }
 
 .sidenav .mat-toolbar {
@@ -67,16 +68,16 @@ html *{
 
 }
 /*  */
-.list a:hover{
+.list1 a:hover{
   
   background-color: rgb(15, 155, 236);
   
   
 }
 
-.list a:focus {
+.list1 a:focus {
   
-  background-color:  rgb(188, 214, 223);
+  background-color:  red;
   
 } 
 
