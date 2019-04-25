@@ -23,14 +23,14 @@ export class MainNavComponent {
   onWindowScroll() {
 
     const number = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
-    if (number < 50) {
+    if (number < 40) {
       // this.header=false;
       this.hdr="header";
-      // console.log('You are <50px from the top to bottom');
+      // console.log('You are <40px from the top to bottom');
     } else {
       this.hdr="headerDark mat-elevation-z8";
       // this.header=true;
-      // console.log('You are >50 from the top to bottom');
+      // console.log('You are >40 from the top to bottom');
     
     }
 
