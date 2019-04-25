@@ -92,3 +92,9 @@
  .cardListItem {
   flex: 0 1 calc(33.3% - 32px);
 } */
+
+@media(max-width:960px){
+  .content{
+    font-size: 18px;
+  }
+}
