@@ -154,7 +154,14 @@ font-weight: bold;
       flex-direction: column;
     } */
     .parallax{
-      display:none;
+      margin: 0;
+      border-radius: 0;
+      background-image: none;
+      height:65px;
+     
+    }
+    .innovate{
+      display: none;
     }
     img{
       height: auto;

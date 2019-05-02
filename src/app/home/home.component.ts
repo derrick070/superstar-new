@@ -19,7 +19,7 @@ export class HomeComponent  {
   constructor(public el: ElementRef) { }
 
   ngOnInit(){
-    this.imageUrls=["https://www.economax.com/wcsstore/BMCatalogAssetStore/images/main/00354033_10_FRONT.png","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRKHueRmiH4LlewXDlj9PFkRrtpL_DPJNtfWq7n1HnYUC4xPMh","http://www.pngmart.com/files/7/Refrigerator-PNG-File.png"];
+    this.imageUrls=["https://i.dlpng.com/static/png/291736_thumb.png","http://www.stickpng.com/assets/thumbs/585fd01acb11b227491c35cc.png","https://5.imimg.com/data5/ER/OQ/MY-5774620/western-deep-freezer-whf325h-500x500.png"];
   }
 
   @HostListener('window:scroll', [])

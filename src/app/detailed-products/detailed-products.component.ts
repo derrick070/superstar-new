@@ -38,9 +38,7 @@ export class DetailedProductsComponent implements OnInit {
       this.showArrow = false;
     }
 
-
   }
-
 
   openDialog(): void {
     const dialogRef = this.dialog.open(ProductDialog, {
@@ -54,13 +52,13 @@ export class DetailedProductsComponent implements OnInit {
   }
 
   ngOnInit() {
-    window.scrollTo(0, 0)
   }
 
   scrollToUp(className: string): void {
-    document.querySelector('#title').scrollIntoView({ behavior: 'smooth' });
+    document.querySelector('#top').scrollIntoView({ behavior: 'smooth' });
   
   }
+
 
 }
 

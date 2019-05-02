@@ -1,13 +1,6 @@
+<div class="box-container"><span class="box ">Products </span></div>
 
-
-
-
-<div class="box-container"><span class="box productScroll">Products </span></div>
-
-
-
-
-
+<div *ngIf='flag'>
 <table fxLayoutAlign="center">
   <tr class="gap" fxLayout="row" fxLayout.sm="column" fxLayout.xs="column" *ngFor="let name of featuredProductProductName;let i=index">
     <ng-container *ngIf="i%3==0 && i<6">
@@ -15,8 +8,8 @@
         <div class="flip-card-inner">
           <div class="flip-card-front">
             <mat-card class="matCard">
-              <img mat-card-image
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRKHueRmiH4LlewXDlj9PFkRrtpL_DPJNtfWq7n1HnYUC4xPMh"
+              <img mat-card-image style="height: 200px;width: 200px;"
+                src="https://i.dlpng.com/static/png/135349_thumb.png"
                 alt="Photo of a {{featuredProductProductName[j]}}">
               <div class="bottom-right">Click to Flip</div>
 
@@ -51,10 +44,16 @@
       hello  
 </ng-template> -->
 <div fxLayoutAlign="center" style="padding-bottom: 2%;">
-  <button  mat-stroked-button class="showAll" [routerLink]="['allproducts']">Show
+  <button  mat-stroked-button class="showAll" (click)="showProducts()">Show
       All Products</button>
 </div>
 
+</div>
+<app-detailed-products *ngIf='!flag'></app-detailed-products>
+
+<div *ngIf='!flag' fxLayoutAlign="center" style="padding-bottom: 2%;">
+  <button  mat-stroked-button class="showAll" (click)="hideProducts()">Show Less</button>
+</div>
 
 <mat-divider></mat-divider>
 <div class="parallax1"></div>

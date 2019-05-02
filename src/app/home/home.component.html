@@ -1,4 +1,4 @@
-<div fxLayout="row" fxLayout.xs="column" fxLayoutGap="10px">
+<div id="top" fxLayout="row" fxLayout.xs="column" fxLayoutGap="10px">
   <div class='some-page-wrapper'>
     <div class='row'>
       <div fxFlex.gt-sm="50" fxFlex="100">
@@ -27,7 +27,7 @@
                     [lazyLoad]="imageUrls?.length > 1" 
                     [autoPlayWaitForLazyLoad]="true"
                     [autoPlayInterval]=4000
-                    [backgroundSize]="cover"
+                    [backgroundSize]="'500px'"
                     [showDots]=true
                     [dotColor]="'#060631'"
                     >
@@ -42,18 +42,18 @@
 
 
 
-<mat-divider></mat-divider>
+<mat-divider class="productScroll"></mat-divider>
 
 
 
 
-<div class="parallax">
+<div class="parallax ">
 
   <span class="innovate">&nbsp;One Vision. Innovate.&nbsp;</span>
 
-</div>
+</div> 
 <!-- comment -->
-<mat-divider></mat-divider>
+<!-- <mat-divider ></mat-divider> -->
 <app-featured-products></app-featured-products>
 <app-aboutus></app-aboutus>
 <app-contactus></app-contactus>
